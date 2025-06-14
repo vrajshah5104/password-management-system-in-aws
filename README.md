@@ -66,39 +66,32 @@ A secure, open-source, cloud-hosted password manager built using **Passbolt** an
 
 ### 2. SSH Key Setup
 
-```bash
-ssh-keygen
+- ssh-keygen
 
-Press Enter to confirm default path
+- Press Enter to confirm default path
+- This creates your public/private key pair (usually in ~/.ssh/id_rsa.pub)
 
-This creates your public/private key pair (usually in ~/.ssh/id_rsa.pub)
+### 3. Launch & Access EC2 Instance
 
-3. Launch & Access EC2 Instance
-Launch the EC2 instance from AWS Console
+- Launch the EC2 instance from AWS Console
+- Use the public IP address to SSH into the instance:
 
-Use the public IP address to SSH into the instance:
+- ssh -i your-key.pem ubuntu@<public-ip>
 
-ssh -i your-key.pem ubuntu@<public-ip>
+### 4. Configure Passbolt
 
-4. Configure Passbolt
-Visit your EC2 instance’s public IP in a browser
+- Visit your EC2 instance’s public IP in a browser
+- Begin the setup wizard
+- Generate server GPG keys
+- Optionally configure SMTP (for future email notifications)
+- Set Admin User credentials
 
-Begin the setup wizard
+### 5. Install Chrome Extension & Finalize
 
-Generate server GPG keys
-
-Optionally configure SMTP (for future email notifications)
-
-Set Admin User credentials
-
-5. Install Chrome Extension & Finalize
-Download the Passbolt Chrome Extension
-
-Create a strong 15+ character passphrase
-
-Choose a Security Token for 2FA
-
-Login via the browser extension
+- Download the Passbolt Chrome Extension
+- Create a strong 15+ character passphrase
+- Choose a Security Token for 2FA
+- Login via the browser extension
 
 🔐 Security Measures
 All data encrypted in transit via SSL/TLS
