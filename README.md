@@ -17,6 +17,7 @@ A secure, open-source, cloud-hosted password manager built using **Passbolt** an
 
 ---
 
+<a name="features"></a>
 ## ✅ Features
 
 - Self-hosted password manager using **Passbolt CE (Community Edition)**
@@ -29,6 +30,7 @@ A secure, open-source, cloud-hosted password manager built using **Passbolt** an
 
 ---
 
+<a name="tech-stack"></a>
 ## 🧰 Tech Stack
 
 - **AWS EC2** – Cloud hosting for Passbolt server  
@@ -39,6 +41,7 @@ A secure, open-source, cloud-hosted password manager built using **Passbolt** an
 
 ---
 
+<a name="prerequisites"></a>
 ## 🛠️ Prerequisites
 
 - ✅ [AWS Account](https://aws.amazon.com/)
@@ -49,6 +52,7 @@ A secure, open-source, cloud-hosted password manager built using **Passbolt** an
 
 ---
 
+<a name="deployment-guide"></a>
 ## 🚀 Deployment Guide
 
 > 💡 _Note: AWS charges approx ₹0.52/hr for the EC2 instance used._
@@ -92,6 +96,7 @@ A secure, open-source, cloud-hosted password manager built using **Passbolt** an
 
 ---
 
+<a name="security-measures"></a>
 ## 🔐 Security Measures
 
 - All data encrypted in transit via SSL/TLS
@@ -102,6 +107,7 @@ A secure, open-source, cloud-hosted password manager built using **Passbolt** an
 
 ---
 
+<a name="usage"></a>
 ## 📦 Usage
 
 - Login through Chrome using your Passphrase + 2FA token
@@ -110,6 +116,7 @@ A secure, open-source, cloud-hosted password manager built using **Passbolt** an
 
 ---
 
+<a name="limitations"></a>
 ## ⚠️ Limitations
 
 - SMTP not fully configured (limits email-based features)
@@ -118,6 +125,7 @@ A secure, open-source, cloud-hosted password manager built using **Passbolt** an
 
 ---
 
+<a name="future-enhancements"></a>
 ## 🌱 Future Enhancements
 
 - Configure SMTP for email notifications (password resets, invites)
