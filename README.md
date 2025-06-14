@@ -14,9 +14,6 @@ A secure, open-source, cloud-hosted password manager built using **Passbolt** an
 - [Usage](#usage)
 - [Limitations](#limitations)
 - [Future Enhancements](#future-enhancements)
-- [Screenshots](#screenshots)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
 
 ---
 
@@ -58,7 +55,7 @@ A secure, open-source, cloud-hosted password manager built using **Passbolt** an
 
 ### 1. Deploy Passbolt via AWS Marketplace
 
-- Go to [Passbolt AWS Marketplace Page](https://aws.amazon.com/marketplace)
+- Go to Passbolt AWS Marketplace Page
 - Select **Passbolt Community Edition**
 - Choose the desired instance type and region
 - Create a **Security Group** allowing HTTP (80), HTTPS (443), and SSH (22)
@@ -93,38 +90,38 @@ A secure, open-source, cloud-hosted password manager built using **Passbolt** an
 - Choose a Security Token for 2FA
 - Login via the browser extension
 
-🔐 Security Measures
-All data encrypted in transit via SSL/TLS
+---
 
-Server access restricted via SSH key-pairs
+## 🔐 Security Measures
 
-Strong password and passphrase policies enforced
+- All data encrypted in transit via SSL/TLS
+- Server access restricted via SSH key-pairs
+- Strong password and passphrase policies enforced
+- Two-Factor Authentication (2FA) enabled using browser extension
+- Hosted in a secure AWS environment following least privilege access model
 
-Two-Factor Authentication (2FA) enabled using browser extension
+---
 
-Hosted in a secure AWS environment following least privilege access model
+## 📦 Usage
 
-📦 Usage
-Login through Chrome using your Passphrase + 2FA token
+- Login through Chrome using your Passphrase + 2FA token
+- Store, manage, and share passwords securely
+- Admin panel accessible for managing users and permissions
 
-Store, manage, and share passwords securely
+---
 
-Admin panel accessible for managing users and permissions
+## ⚠️ Limitations
 
-⚠️ Limitations
-SMTP not fully configured (limits email-based features)
+- SMTP not fully configured (limits email-based features)
+- Currently no backup automation in place
+- Domain HTTPS setup requires manual configuration (if desired)
 
-Currently no backup automation in place
+---
 
-Domain HTTPS setup requires manual configuration (if desired)
+## 🌱 Future Enhancements
 
-🌱 Future Enhancements
-Configure SMTP for email notifications (password resets, invites)
-
-Automate EC2 backup snapshots for disaster recovery
-
-Integrate domain with HTTPS using Let's Encrypt
-
-Dockerize deployment for portability
-
-Monitoring and logging via CloudWatch
+- Configure SMTP for email notifications (password resets, invites)
+- Automate EC2 backup snapshots for disaster recovery
+- Integrate domain with HTTPS using Let's Encrypt
+- Dockerize deployment for portability
+- Monitoring and logging via CloudWatch
